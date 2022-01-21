@@ -273,3 +273,36 @@ footer .redes-sociales a img{
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+
+/*-------------------------MEDIA QUERIES-------------------------------*/
+@media screen and (max-width: 800px) {
+    header{
+        background-position: left;
+    }
+
+    header .menu{
+        text-align: center;
+    }
+
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        background-position-x: 15%;
+    }
+    header .contenedor-texto .texto .nombre{
+        font-size: 35px;
+    }
+
+    header .contenedor-texto .texto .profesion{
+        font-size: 18px;
+    }
+
+    footer .redes-sociales .contenedor{
+        flex-wrap: wrap;
+        padding: 20px 0px;
+    }
+}
