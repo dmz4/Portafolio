@@ -216,7 +216,7 @@ footer .contacto .formulario input[type="email"],
 footer .contacto .formulario textarea{
     border: 2px solid #cecece;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 16px;
     color: #a4a4a4;
     padding: 15px 20px;
 }
@@ -292,6 +292,9 @@ footer .redes-sociales a img{
 @media screen and (max-width: 500px) {
     header{
         background-position-x: 15%;
+    }
+    header .menu a{
+        margin: 0px 12px;
     }
     header .contenedor-texto .texto .nombre{
         font-size: 35px;
