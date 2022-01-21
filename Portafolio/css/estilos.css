@@ -2,6 +2,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -96,4 +97,180 @@ header .contenedor-texto .texto .profesion{
     vertical-align: top;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.main .about .texto{
+    color: black;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+.main .about .texto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main .trabajos{
+    background: #f2f2f2;
+    padding: 25px 0;
+}
+
+.main .trabajos .contenedor{
+    overflow: hidden;
+}
+
+.main .trabajos .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo{
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo a{
+    color: black;
+    text-decoration: none;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    font-size: 14px;
+}
+
+/*----------------------FOOTER----------------------------*/
+
+footer .contacto{
+    padding: 50px 0px 100px 0px;
+}
+
+footer .contacto .titulo{
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    text-align: center;
+    color: #A10000;
+}
+
+footer .contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #a4a4a4;
+    padding: 15px 20px;
+}
+
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus{
+    border-color: #A10000;
+    border-style: solid;
+    border-width: 2px;
+    outline-color: #A10000;
+}
+
+footer .contacto .formulario .boton{
+    margin: auto;
+    background-color: #A10000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .contacto .formulario .boton:hover{
+    background-color: #850101;   
+}
+
+footer .redes-sociales{
+    background: #710000;
+    padding: 50px 0;
+}
+
+footer .redes-sociales .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes-sociales a{
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+
+footer .redes-sociales a:hover{
+    background: #5D0000;
+}
+
+footer .redes-sociales a img{
+    height: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
 }
